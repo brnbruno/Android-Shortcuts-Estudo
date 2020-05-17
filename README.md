@@ -2,13 +2,13 @@
 
 # Criando Shortcuts (Atalhos)
 
-### Documentação relacionada :
+### DocumentaÃ§Ã£o relacionada :
 
 [Create shortcuts | Android Developers](https://developer.android.com/guide/topics/ui/shortcuts/creating-shortcuts)
 
-### Criando um atalho estático:
+### Criando um atalho estÃ¡tico:
 
-No arquivo **AndroidManifest.xml** devemos procura a Activity que contém a  ação (action) **android.intent.action.MAIN action** e a categoria **android.intent.category.LAUNCHER:**
+No arquivo **AndroidManifest.xml** devemos procura a Activity que contÃ©m a  aÃ§Ã£o (action) **android.intent.action.MAIN action** e a categoria **android.intent.category.LAUNCHER:**
 
 ```xml
 <meta-data android:name="android.app.shortcuts"
@@ -60,8 +60,8 @@ No arquivo **AndroidManifest.xml** devemos procura a Activity que contém a  ação
             android:action="android.intent.action.VIEW"
             android:targetPackage="net.azurewebsites.shortcuts"
             android:targetClass="net.azurewebsites.shortcuts.MainActivity" />
-        <!-- Se o seu atalho estiver associado a várias intenções, inclua-as
-             aqui. A última intenção na lista determina o que o usuário vê quando
+        <!-- Se o seu atalho estiver associado a vÃ¡rias intenÃ§Ãµes, inclua-as
+             aqui. A Ãºltima intenÃ§Ã£o na lista determina o que o usuÃ¡rio vÃª quando
              eles iniciam esse atalho. -->
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
@@ -82,4 +82,4 @@ No arquivo **AndroidManifest.xml** devemos procura a Activity que contém a  ação
 
 ### Resultado:
 
-![img/Anotao_2020-05-17_114304.png](Criando%20Shortcuts%20Atalhos%20bcfa1ce56417475987c932e250702813/Anotao_2020-05-17_114304.png)
+![img/Anotao_2020-05-17_114304.png](img/Anotao_2020-05-17_114304.png)
