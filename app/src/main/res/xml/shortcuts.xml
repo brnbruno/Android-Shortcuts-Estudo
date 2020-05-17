@@ -1,0 +1,19 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="id"
+        android:enabled="true"
+        android:icon="@mipmap/ic_android"
+        android:shortcutShortLabel="@string/shortcut_short_label"
+        android:shortcutLongLabel="@string/shortcut_long_label"
+        android:shortcutDisabledMessage="@string/disabled_message">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="net.azurewebsites.shortcuts"
+            android:targetClass="net.azurewebsites.shortcuts.MainActivity" />
+        <!-- Se o seu atalho estiver associado a várias intenções, inclua-as
+             aqui. A última intenção na lista determina o que o usuário vê quando
+             eles iniciam esse atalho. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <!-- Especifique mais atalhos aqui. -->
+</shortcuts>
